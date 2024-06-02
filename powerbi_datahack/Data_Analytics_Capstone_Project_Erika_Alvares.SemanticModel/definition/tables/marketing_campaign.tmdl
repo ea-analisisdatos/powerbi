@@ -2,10 +2,9 @@ table marketing_campaign
 	lineageTag: bb30e30a-2cc1-4f5f-816f-38434a193ce0
 
 	column ID
-		dataType: int64
-		formatString: 0
+		dataType: string
 		lineageTag: 787db987-de8f-452c-90f8-987c5d5bbd21
-		summarizeBy: count
+		summarizeBy: none
 		sourceColumn: ID
 
 		annotation SummarizationSetBy = Automatic
@@ -36,7 +35,7 @@ table marketing_campaign
 		annotation SummarizationSetBy = Automatic
 
 	column Income
-		dataType: int64
+		dataType: decimal
 		formatString: 0
 		lineageTag: 28e6fc2d-e000-4b1a-a2d4-39a5cb707ac6
 		summarizeBy: sum
@@ -45,19 +44,17 @@ table marketing_campaign
 		annotation SummarizationSetBy = Automatic
 
 	column Kidhome
-		dataType: int64
-		formatString: 0
+		dataType: string
 		lineageTag: 5636098d-23b7-4b37-87cd-b01bab4900ee
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: Kidhome
 
 		annotation SummarizationSetBy = Automatic
 
 	column Teenhome
-		dataType: int64
-		formatString: 0
+		dataType: string
 		lineageTag: 350bcf98-fdc5-4b73-aebd-475f97d27750
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: Teenhome
 
 		annotation SummarizationSetBy = Automatic
@@ -88,7 +85,7 @@ table marketing_campaign
 		annotation SummarizationSetBy = Automatic
 
 	column MntWines
-		dataType: int64
+		dataType: decimal
 		formatString: 0
 		lineageTag: 71c51f03-0091-43b8-b2fd-17cd51bdb4ad
 		summarizeBy: sum
@@ -97,7 +94,7 @@ table marketing_campaign
 		annotation SummarizationSetBy = Automatic
 
 	column MntFruits
-		dataType: int64
+		dataType: decimal
 		formatString: 0
 		lineageTag: 2264f9ba-e60d-41b5-9b39-6caeee16776e
 		summarizeBy: sum
@@ -106,7 +103,7 @@ table marketing_campaign
 		annotation SummarizationSetBy = Automatic
 
 	column MntMeatProducts
-		dataType: int64
+		dataType: decimal
 		formatString: 0
 		lineageTag: 31f9f501-6c61-4f1e-90c4-6bb99aa97b6f
 		summarizeBy: sum
@@ -115,7 +112,7 @@ table marketing_campaign
 		annotation SummarizationSetBy = Automatic
 
 	column MntFishProducts
-		dataType: int64
+		dataType: decimal
 		formatString: 0
 		lineageTag: 8630183a-669f-423d-983d-796a00219203
 		summarizeBy: sum
@@ -124,7 +121,7 @@ table marketing_campaign
 		annotation SummarizationSetBy = Automatic
 
 	column MntSweetProducts
-		dataType: int64
+		dataType: decimal
 		formatString: 0
 		lineageTag: d7fc9e89-bdeb-482f-8f17-7e8c5a0d00f5
 		summarizeBy: sum
@@ -133,7 +130,7 @@ table marketing_campaign
 		annotation SummarizationSetBy = Automatic
 
 	column MntGoldProds
-		dataType: int64
+		dataType: decimal
 		formatString: 0
 		lineageTag: e050106e-64e9-4540-9196-29745bb9a924
 		summarizeBy: sum
@@ -187,61 +184,55 @@ table marketing_campaign
 		annotation SummarizationSetBy = Automatic
 
 	column AcceptedCmp3
-		dataType: int64
-		formatString: 0
+		dataType: string
 		lineageTag: 00817886-13e5-4c25-be2d-ea22678a3999
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: AcceptedCmp3
 
 		annotation SummarizationSetBy = Automatic
 
 	column AcceptedCmp4
-		dataType: int64
-		formatString: 0
+		dataType: string
 		lineageTag: 3ca81baa-5b75-4940-a200-5e87fda9f848
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: AcceptedCmp4
 
 		annotation SummarizationSetBy = Automatic
 
 	column AcceptedCmp5
-		dataType: int64
-		formatString: 0
+		dataType: string
 		lineageTag: c359dde1-0268-4c99-b98b-96d10c3372f1
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: AcceptedCmp5
 
 		annotation SummarizationSetBy = Automatic
 
 	column AcceptedCmp1
-		dataType: int64
-		formatString: 0
+		dataType: string
 		lineageTag: 73a80843-0dfe-46cc-bda2-89162768400f
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: AcceptedCmp1
 
 		annotation SummarizationSetBy = Automatic
 
 	column AcceptedCmp2
-		dataType: int64
-		formatString: 0
+		dataType: string
 		lineageTag: 3f769d2d-f4e8-4ad4-92a1-cdcd547971f1
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: AcceptedCmp2
 
 		annotation SummarizationSetBy = Automatic
 
 	column Complain
-		dataType: int64
-		formatString: 0
+		dataType: string
 		lineageTag: a06debce-7e06-48af-8266-1eea52b0440c
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: Complain
 
 		annotation SummarizationSetBy = Automatic
 
 	column Z_CostContact
-		dataType: int64
+		dataType: decimal
 		formatString: 0
 		lineageTag: 5867ff8c-4f2a-4577-81da-d53eec1ccd32
 		summarizeBy: sum
@@ -250,7 +241,7 @@ table marketing_campaign
 		annotation SummarizationSetBy = Automatic
 
 	column Z_Revenue
-		dataType: int64
+		dataType: decimal
 		formatString: 0
 		lineageTag: aef9394b-109a-4555-b380-fec820b8edb9
 		summarizeBy: sum
@@ -259,10 +250,9 @@ table marketing_campaign
 		annotation SummarizationSetBy = Automatic
 
 	column Response
-		dataType: int64
-		formatString: 0
+		dataType: string
 		lineageTag: 77efe5fd-ee93-435c-a8be-8c693f1f7f38
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: Response
 
 		annotation SummarizationSetBy = Automatic
@@ -273,7 +263,7 @@ table marketing_campaign
 				let
 				    Origen = Csv.Document(Web.Contents("https://raw.githubusercontent.com/ea-analisisdatos/powerbi/main/data/marketing_campaign.csv"),[Delimiter=";", Columns=29, Encoding=65001, QuoteStyle=QuoteStyle.None]),
 				    #"Encabezados promovidos" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),
-				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"ID", Int64.Type}, {"Year_Birth", Int64.Type}, {"Education", type text}, {"Marital_Status", type text}, {"Income", Int64.Type}, {"Kidhome", Int64.Type}, {"Teenhome", Int64.Type}, {"Dt_Customer", type date}, {"Recency", Int64.Type}, {"MntWines", Int64.Type}, {"MntFruits", Int64.Type}, {"MntMeatProducts", Int64.Type}, {"MntFishProducts", Int64.Type}, {"MntSweetProducts", Int64.Type}, {"MntGoldProds", Int64.Type}, {"NumDealsPurchases", Int64.Type}, {"NumWebPurchases", Int64.Type}, {"NumCatalogPurchases", Int64.Type}, {"NumStorePurchases", Int64.Type}, {"NumWebVisitsMonth", Int64.Type}, {"AcceptedCmp3", Int64.Type}, {"AcceptedCmp4", Int64.Type}, {"AcceptedCmp5", Int64.Type}, {"AcceptedCmp1", Int64.Type}, {"AcceptedCmp2", Int64.Type}, {"Complain", Int64.Type}, {"Z_CostContact", Int64.Type}, {"Z_Revenue", Int64.Type}, {"Response", Int64.Type}})
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Year_Birth", Int64.Type}, {"Income", Currency.Type}, {"Dt_Customer", type date}, {"Recency", Int64.Type}, {"MntWines", Currency.Type}, {"MntFruits", Currency.Type}, {"MntMeatProducts", Currency.Type}, {"MntFishProducts", Currency.Type}, {"MntSweetProducts", Currency.Type}, {"MntGoldProds", Currency.Type}, {"NumDealsPurchases", Int64.Type}, {"NumWebPurchases", Int64.Type}, {"NumCatalogPurchases", Int64.Type}, {"NumStorePurchases", Int64.Type}, {"NumWebVisitsMonth", Int64.Type}, {"Z_CostContact", Currency.Type}, {"Z_Revenue", Currency.Type}})
 				in
 				    #"Tipo cambiado"
 
