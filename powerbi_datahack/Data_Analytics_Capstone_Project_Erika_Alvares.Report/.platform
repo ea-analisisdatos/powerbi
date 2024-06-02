@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Data_Analytics_Capstone_Project_Erika_Alvares"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "da1fad89-b8e2-4a7d-b510-c935352b6090"
+  }
+}

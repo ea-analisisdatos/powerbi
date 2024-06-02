@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Data_Analytics_Capstone_Project_Erika_Alvares"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "d02e51da-b7fb-4e08-b835-83c33562aacd"
+  }
+}
