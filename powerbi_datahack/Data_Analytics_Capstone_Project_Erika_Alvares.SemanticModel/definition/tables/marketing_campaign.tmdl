@@ -9,62 +9,62 @@ table marketing_campaign
 
 		annotation SummarizationSetBy = Automatic
 
-	column Year_Birth
+	column Año_Nacimiento
 		dataType: int64
 		formatString: 0
 		lineageTag: c856977f-10c5-45cf-87b9-f39acbec7cb3
 		summarizeBy: sum
-		sourceColumn: Year_Birth
+		sourceColumn: Año_Nacimiento
 
 		annotation SummarizationSetBy = Automatic
 
-	column Education
+	column Educación
 		dataType: string
 		lineageTag: 5be734e1-3b51-42e0-a751-18aca8880b07
 		summarizeBy: none
-		sourceColumn: Education
+		sourceColumn: Educación
 
 		annotation SummarizationSetBy = Automatic
 
-	column Marital_Status
+	column Estado_Civil
 		dataType: string
 		lineageTag: 1f0fae14-064e-4433-acbc-4ad4a8fb4b6d
 		summarizeBy: none
-		sourceColumn: Marital_Status
+		sourceColumn: Estado_Civil
 
 		annotation SummarizationSetBy = Automatic
 
-	column Income
+	column Ingreso_Familiar
 		dataType: decimal
 		formatString: 0
 		lineageTag: 28e6fc2d-e000-4b1a-a2d4-39a5cb707ac6
 		summarizeBy: sum
-		sourceColumn: Income
+		sourceColumn: Ingreso_Familiar
 
 		annotation SummarizationSetBy = Automatic
 
-	column Kidhome
+	column Hijos_Pequeños
 		dataType: string
 		lineageTag: 5636098d-23b7-4b37-87cd-b01bab4900ee
 		summarizeBy: none
-		sourceColumn: Kidhome
+		sourceColumn: Hijos_Pequeños
 
 		annotation SummarizationSetBy = Automatic
 
-	column Teenhome
+	column Hijos_Adolescentes
 		dataType: string
 		lineageTag: 350bcf98-fdc5-4b73-aebd-475f97d27750
 		summarizeBy: none
-		sourceColumn: Teenhome
+		sourceColumn: Hijos_Adolescentes
 
 		annotation SummarizationSetBy = Automatic
 
-	column Dt_Customer
+	column Fecha_Alta
 		dataType: dateTime
 		formatString: Long Date
 		lineageTag: 8a9b9847-d921-4ac1-aac1-ca90deb9d5bb
 		summarizeBy: none
-		sourceColumn: Dt_Customer
+		sourceColumn: Fecha_Alta
 
 		variation Variación
 			isDefault
@@ -75,185 +75,185 @@ table marketing_campaign
 
 		annotation UnderlyingDateTimeDataType = Date
 
-	column Recency
+	column Recencia
 		dataType: int64
 		formatString: 0
 		lineageTag: 4f2e3115-be88-4f0a-8467-39649e6548ae
 		summarizeBy: sum
-		sourceColumn: Recency
+		sourceColumn: Recencia
 
 		annotation SummarizationSetBy = Automatic
 
-	column MntWines
+	column Gasto_Vinos
 		dataType: decimal
 		formatString: 0
 		lineageTag: 71c51f03-0091-43b8-b2fd-17cd51bdb4ad
 		summarizeBy: sum
-		sourceColumn: MntWines
+		sourceColumn: Gasto_Vinos
 
 		annotation SummarizationSetBy = Automatic
 
-	column MntFruits
+	column Gasto_Frutas
 		dataType: decimal
 		formatString: 0
 		lineageTag: 2264f9ba-e60d-41b5-9b39-6caeee16776e
 		summarizeBy: sum
-		sourceColumn: MntFruits
+		sourceColumn: Gasto_Frutas
 
 		annotation SummarizationSetBy = Automatic
 
-	column MntMeatProducts
+	column Gasto_Carne
 		dataType: decimal
 		formatString: 0
 		lineageTag: 31f9f501-6c61-4f1e-90c4-6bb99aa97b6f
 		summarizeBy: sum
-		sourceColumn: MntMeatProducts
+		sourceColumn: Gasto_Carne
 
 		annotation SummarizationSetBy = Automatic
 
-	column MntFishProducts
+	column Gasto_Pescado
 		dataType: decimal
 		formatString: 0
 		lineageTag: 8630183a-669f-423d-983d-796a00219203
 		summarizeBy: sum
-		sourceColumn: MntFishProducts
+		sourceColumn: Gasto_Pescado
 
 		annotation SummarizationSetBy = Automatic
 
-	column MntSweetProducts
+	column Gasto_Dulces
 		dataType: decimal
 		formatString: 0
 		lineageTag: d7fc9e89-bdeb-482f-8f17-7e8c5a0d00f5
 		summarizeBy: sum
-		sourceColumn: MntSweetProducts
+		sourceColumn: Gasto_Dulces
 
 		annotation SummarizationSetBy = Automatic
 
-	column MntGoldProds
+	column Gasto_Producto_Premium
 		dataType: decimal
 		formatString: 0
 		lineageTag: e050106e-64e9-4540-9196-29745bb9a924
 		summarizeBy: sum
-		sourceColumn: MntGoldProds
+		sourceColumn: Gasto_Producto_Premium
 
 		annotation SummarizationSetBy = Automatic
 
-	column NumDealsPurchases
+	column Compras_Descuento
 		dataType: int64
 		formatString: 0
 		lineageTag: 50bfb06c-e1fe-43e2-94c0-97a9cc7d65b0
 		summarizeBy: sum
-		sourceColumn: NumDealsPurchases
+		sourceColumn: Compras_Descuento
 
 		annotation SummarizationSetBy = Automatic
 
-	column NumWebPurchases
+	column Compras_Web
 		dataType: int64
 		formatString: 0
 		lineageTag: 7c8cdc67-9011-4934-aad4-f9aaacac0052
 		summarizeBy: sum
-		sourceColumn: NumWebPurchases
+		sourceColumn: Compras_Web
 
 		annotation SummarizationSetBy = Automatic
 
-	column NumCatalogPurchases
+	column Compras_Catalogo
 		dataType: int64
 		formatString: 0
 		lineageTag: df826be7-207e-4ad5-be3d-b6fa797e2981
 		summarizeBy: sum
-		sourceColumn: NumCatalogPurchases
+		sourceColumn: Compras_Catalogo
 
 		annotation SummarizationSetBy = Automatic
 
-	column NumStorePurchases
+	column Compras_Tienda
 		dataType: int64
 		formatString: 0
 		lineageTag: 41303749-2ffa-4e86-9f5c-d19fcb5ee8b3
 		summarizeBy: sum
-		sourceColumn: NumStorePurchases
+		sourceColumn: Compras_Tienda
 
 		annotation SummarizationSetBy = Automatic
 
-	column NumWebVisitsMonth
+	column Visitas_Web_Mes
 		dataType: int64
 		formatString: 0
 		lineageTag: 3271ad27-8c3b-4527-b56d-828613baf8fe
 		summarizeBy: sum
-		sourceColumn: NumWebVisitsMonth
+		sourceColumn: Visitas_Web_Mes
 
 		annotation SummarizationSetBy = Automatic
 
-	column AcceptedCmp3
+	column Campaña_Aceptada_3
 		dataType: string
 		lineageTag: 00817886-13e5-4c25-be2d-ea22678a3999
 		summarizeBy: none
-		sourceColumn: AcceptedCmp3
+		sourceColumn: Campaña_Aceptada_3
 
 		annotation SummarizationSetBy = Automatic
 
-	column AcceptedCmp4
+	column Campaña_Aceptada_4
 		dataType: string
 		lineageTag: 3ca81baa-5b75-4940-a200-5e87fda9f848
 		summarizeBy: none
-		sourceColumn: AcceptedCmp4
+		sourceColumn: Campaña_Aceptada_4
 
 		annotation SummarizationSetBy = Automatic
 
-	column AcceptedCmp5
+	column Campaña_Aceptada_5
 		dataType: string
 		lineageTag: c359dde1-0268-4c99-b98b-96d10c3372f1
 		summarizeBy: none
-		sourceColumn: AcceptedCmp5
+		sourceColumn: Campaña_Aceptada_5
 
 		annotation SummarizationSetBy = Automatic
 
-	column AcceptedCmp1
+	column Campaña_Aceptada_1
 		dataType: string
 		lineageTag: 73a80843-0dfe-46cc-bda2-89162768400f
 		summarizeBy: none
-		sourceColumn: AcceptedCmp1
+		sourceColumn: Campaña_Aceptada_1
 
 		annotation SummarizationSetBy = Automatic
 
-	column AcceptedCmp2
+	column Campaña_Aceptada_2
 		dataType: string
 		lineageTag: 3f769d2d-f4e8-4ad4-92a1-cdcd547971f1
 		summarizeBy: none
-		sourceColumn: AcceptedCmp2
+		sourceColumn: Campaña_Aceptada_2
 
 		annotation SummarizationSetBy = Automatic
 
-	column Complain
+	column Queja
 		dataType: string
 		lineageTag: a06debce-7e06-48af-8266-1eea52b0440c
 		summarizeBy: none
-		sourceColumn: Complain
+		sourceColumn: Queja
 
 		annotation SummarizationSetBy = Automatic
 
-	column Z_CostContact
+	column Costo_Contacto
 		dataType: decimal
 		formatString: 0
 		lineageTag: 5867ff8c-4f2a-4577-81da-d53eec1ccd32
 		summarizeBy: sum
-		sourceColumn: Z_CostContact
+		sourceColumn: Costo_Contacto
 
 		annotation SummarizationSetBy = Automatic
 
-	column Z_Revenue
+	column Ganancias_Campaña
 		dataType: decimal
 		formatString: 0
 		lineageTag: aef9394b-109a-4555-b380-fec820b8edb9
 		summarizeBy: sum
-		sourceColumn: Z_Revenue
+		sourceColumn: Ganancias_Campaña
 
 		annotation SummarizationSetBy = Automatic
 
-	column Response
+	column Respuesta_Campaña
 		dataType: string
 		lineageTag: 77efe5fd-ee93-435c-a8be-8c693f1f7f38
 		summarizeBy: none
-		sourceColumn: Response
+		sourceColumn: Respuesta_Campaña
 
 		annotation SummarizationSetBy = Automatic
 
@@ -263,9 +263,10 @@ table marketing_campaign
 				let
 				    Origen = Csv.Document(Web.Contents("https://raw.githubusercontent.com/ea-analisisdatos/powerbi/main/data/marketing_campaign.csv"),[Delimiter=";", Columns=29, Encoding=65001, QuoteStyle=QuoteStyle.None]),
 				    #"Encabezados promovidos" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),
-				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Year_Birth", Int64.Type}, {"Income", Currency.Type}, {"Dt_Customer", type date}, {"Recency", Int64.Type}, {"MntWines", Currency.Type}, {"MntFruits", Currency.Type}, {"MntMeatProducts", Currency.Type}, {"MntFishProducts", Currency.Type}, {"MntSweetProducts", Currency.Type}, {"MntGoldProds", Currency.Type}, {"NumDealsPurchases", Int64.Type}, {"NumWebPurchases", Int64.Type}, {"NumCatalogPurchases", Int64.Type}, {"NumStorePurchases", Int64.Type}, {"NumWebVisitsMonth", Int64.Type}, {"Z_CostContact", Currency.Type}, {"Z_Revenue", Currency.Type}})
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Year_Birth", Int64.Type}, {"Income", Currency.Type}, {"Dt_Customer", type date}, {"Recency", Int64.Type}, {"MntWines", Currency.Type}, {"MntFruits", Currency.Type}, {"MntMeatProducts", Currency.Type}, {"MntFishProducts", Currency.Type}, {"MntSweetProducts", Currency.Type}, {"MntGoldProds", Currency.Type}, {"NumDealsPurchases", Int64.Type}, {"NumWebPurchases", Int64.Type}, {"NumCatalogPurchases", Int64.Type}, {"NumStorePurchases", Int64.Type}, {"NumWebVisitsMonth", Int64.Type}, {"Z_CostContact", Currency.Type}, {"Z_Revenue", Currency.Type}}),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Tipo cambiado",{{"Year_Birth", "Año_Nacimiento"}, {"Education", "Educación"}, {"Marital_Status", "Estado_Civil"}, {"Income", "Ingreso_Familiar"}, {"Dt_Customer", "Fecha_Alta"}, {"Z_Revenue", "Ganancias_Campaña"}, {"Response", "Respuesta_Campaña"}, {"Complain", "Queja"}, {"Kidhome", "Hijos_Pequeños"}, {"Teenhome", "Hijos_Adolescentes"}, {"Recency", "Recencia"}, {"MntWines", "Gasto_Vinos"}, {"MntFruits", "Gasto_Frutas"}, {"MntMeatProducts", "Gasto_Carne"}, {"MntFishProducts", "Gasto_Pescado"}, {"MntSweetProducts", "Gasto_Dulces"}, {"Z_CostContact", "Costo_Contacto"}, {"MntGoldProds", "Gasto_Producto_Premium"}, {"NumDealsPurchases", "Compras_Descuento"}, {"NumWebPurchases", "Compras_Web"}, {"NumCatalogPurchases", "Compras_Catalogo"}, {"NumStorePurchases", "Compras_Tienda"}, {"NumWebVisitsMonth", "Visitas_Web_Mes"}, {"AcceptedCmp3", "Campaña_Aceptada_3"}, {"AcceptedCmp4", "Campaña_Aceptada_4"}, {"AcceptedCmp5", "Campaña_Aceptada_5"}, {"AcceptedCmp1", "Campaña_Aceptada_1"}, {"AcceptedCmp2", "Campaña_Aceptada_2"}})
 				in
-				    #"Tipo cambiado"
+				    #"Columnas con nombre cambiado"
 
 	annotation PBI_NavigationStepName = Navegación
 
