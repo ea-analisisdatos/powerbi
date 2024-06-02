@@ -6,17 +6,33 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
+/// Este proyecto usa la base de datos marketing_campaign.csv obtenida en Kaggle. Para este proyecto, esta base de datos se encuentra almacenada en mi repositorio de Github y se conecta diretamente a el por medio de conexión online (web). El fichero pude ser accedido por este enlace: https://github.com/ea-analisisdatos/powerbi/tree/main/data
+queryGroup 'Datos Brutos'
+
+	annotation PBI_QueryGroupOrder = 0
+
+/// Almacena las tablas de Hechos (FACT).
+queryGroup Hechos
+
+	annotation PBI_QueryGroupOrder = 1
+
+/// Almacena tablas de dimensiones (DIMENSIONS).
+queryGroup DIMENSIONES
+
+	annotation PBI_QueryGroupOrder = 2
+
 annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBIDesktopVersion = 2.129.1229.0 (24.05)
 
-annotation PBI_QueryOrder = ["marketing_campaign"]
+annotation PBI_QueryOrder = ["data_raw","f_campanas"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
 ref table DateTableTemplate_b024febb-f18a-456a-a2b8-94d2606f2c1e
-ref table marketing_campaign
-ref table LocalDateTable_89eaef9c-50ef-4ad0-8d2d-810ce475a7f8
+ref table data_raw
+ref table f_campanas
+ref table LocalDateTable_08fc6284-1eb8-4588-92ea-7ea5bf2c8b99
 
 ref cultureInfo es-ES
 

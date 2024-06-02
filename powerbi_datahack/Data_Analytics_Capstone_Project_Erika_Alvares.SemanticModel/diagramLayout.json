@@ -13,8 +13,20 @@
             "x": 0,
             "y": 0
           },
-          "nodeIndex": "marketing_campaign",
-          "nodeLineageTag": "bb30e30a-2cc1-4f5f-816f-38434a193ce0",
+          "nodeIndex": "data_raw",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 284,
+            "y": 0
+          },
+          "nodeIndex": "f_campanas",
+          "nodeLineageTag": "26a9e9b1-169e-4e51-8a15-071f4cdc81a3",
           "size": {
             "height": 300,
             "width": 234

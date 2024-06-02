@@ -1,0 +1,249 @@
+table data_raw
+	lineageTag: bb30e30a-2cc1-4f5f-816f-38434a193ce0
+
+	column ID
+		dataType: string
+		lineageTag: 787db987-de8f-452c-90f8-987c5d5bbd21
+		summarizeBy: none
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year_Birth
+		dataType: string
+		lineageTag: c856977f-10c5-45cf-87b9-f39acbec7cb3
+		summarizeBy: none
+		sourceColumn: Year_Birth
+
+		annotation SummarizationSetBy = Automatic
+
+	column Education
+		dataType: string
+		lineageTag: 5be734e1-3b51-42e0-a751-18aca8880b07
+		summarizeBy: none
+		sourceColumn: Education
+
+		annotation SummarizationSetBy = Automatic
+
+	column Marital_Status
+		dataType: string
+		lineageTag: 1f0fae14-064e-4433-acbc-4ad4a8fb4b6d
+		summarizeBy: none
+		sourceColumn: Marital_Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column Income
+		dataType: string
+		lineageTag: 28e6fc2d-e000-4b1a-a2d4-39a5cb707ac6
+		summarizeBy: none
+		sourceColumn: Income
+
+		annotation SummarizationSetBy = Automatic
+
+	column Kidhome
+		dataType: string
+		lineageTag: 5636098d-23b7-4b37-87cd-b01bab4900ee
+		summarizeBy: none
+		sourceColumn: Kidhome
+
+		annotation SummarizationSetBy = Automatic
+
+	column Teenhome
+		dataType: string
+		lineageTag: 350bcf98-fdc5-4b73-aebd-475f97d27750
+		summarizeBy: none
+		sourceColumn: Teenhome
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dt_Customer
+		dataType: string
+		lineageTag: 8a9b9847-d921-4ac1-aac1-ca90deb9d5bb
+		summarizeBy: none
+		sourceColumn: Dt_Customer
+
+		annotation SummarizationSetBy = Automatic
+
+	column Recency
+		dataType: string
+		lineageTag: 4f2e3115-be88-4f0a-8467-39649e6548ae
+		summarizeBy: none
+		sourceColumn: Recency
+
+		annotation SummarizationSetBy = Automatic
+
+	column MntWines
+		dataType: string
+		lineageTag: 71c51f03-0091-43b8-b2fd-17cd51bdb4ad
+		summarizeBy: none
+		sourceColumn: MntWines
+
+		annotation SummarizationSetBy = Automatic
+
+	column MntFruits
+		dataType: string
+		lineageTag: 2264f9ba-e60d-41b5-9b39-6caeee16776e
+		summarizeBy: none
+		sourceColumn: MntFruits
+
+		annotation SummarizationSetBy = Automatic
+
+	column MntMeatProducts
+		dataType: string
+		lineageTag: 31f9f501-6c61-4f1e-90c4-6bb99aa97b6f
+		summarizeBy: none
+		sourceColumn: MntMeatProducts
+
+		annotation SummarizationSetBy = Automatic
+
+	column MntFishProducts
+		dataType: string
+		lineageTag: 8630183a-669f-423d-983d-796a00219203
+		summarizeBy: none
+		sourceColumn: MntFishProducts
+
+		annotation SummarizationSetBy = Automatic
+
+	column MntSweetProducts
+		dataType: string
+		lineageTag: d7fc9e89-bdeb-482f-8f17-7e8c5a0d00f5
+		summarizeBy: none
+		sourceColumn: MntSweetProducts
+
+		annotation SummarizationSetBy = Automatic
+
+	column MntGoldProds
+		dataType: string
+		lineageTag: e050106e-64e9-4540-9196-29745bb9a924
+		summarizeBy: none
+		sourceColumn: MntGoldProds
+
+		annotation SummarizationSetBy = Automatic
+
+	column NumDealsPurchases
+		dataType: string
+		lineageTag: 50bfb06c-e1fe-43e2-94c0-97a9cc7d65b0
+		summarizeBy: none
+		sourceColumn: NumDealsPurchases
+
+		annotation SummarizationSetBy = Automatic
+
+	column NumWebPurchases
+		dataType: string
+		lineageTag: 7c8cdc67-9011-4934-aad4-f9aaacac0052
+		summarizeBy: none
+		sourceColumn: NumWebPurchases
+
+		annotation SummarizationSetBy = Automatic
+
+	column NumCatalogPurchases
+		dataType: string
+		lineageTag: df826be7-207e-4ad5-be3d-b6fa797e2981
+		summarizeBy: none
+		sourceColumn: NumCatalogPurchases
+
+		annotation SummarizationSetBy = Automatic
+
+	column NumStorePurchases
+		dataType: string
+		lineageTag: 41303749-2ffa-4e86-9f5c-d19fcb5ee8b3
+		summarizeBy: none
+		sourceColumn: NumStorePurchases
+
+		annotation SummarizationSetBy = Automatic
+
+	column NumWebVisitsMonth
+		dataType: string
+		lineageTag: 3271ad27-8c3b-4527-b56d-828613baf8fe
+		summarizeBy: none
+		sourceColumn: NumWebVisitsMonth
+
+		annotation SummarizationSetBy = Automatic
+
+	column AcceptedCmp3
+		dataType: string
+		lineageTag: 00817886-13e5-4c25-be2d-ea22678a3999
+		summarizeBy: none
+		sourceColumn: AcceptedCmp3
+
+		annotation SummarizationSetBy = Automatic
+
+	column AcceptedCmp4
+		dataType: string
+		lineageTag: 3ca81baa-5b75-4940-a200-5e87fda9f848
+		summarizeBy: none
+		sourceColumn: AcceptedCmp4
+
+		annotation SummarizationSetBy = Automatic
+
+	column AcceptedCmp5
+		dataType: string
+		lineageTag: c359dde1-0268-4c99-b98b-96d10c3372f1
+		summarizeBy: none
+		sourceColumn: AcceptedCmp5
+
+		annotation SummarizationSetBy = Automatic
+
+	column AcceptedCmp1
+		dataType: string
+		lineageTag: 73a80843-0dfe-46cc-bda2-89162768400f
+		summarizeBy: none
+		sourceColumn: AcceptedCmp1
+
+		annotation SummarizationSetBy = Automatic
+
+	column AcceptedCmp2
+		dataType: string
+		lineageTag: 3f769d2d-f4e8-4ad4-92a1-cdcd547971f1
+		summarizeBy: none
+		sourceColumn: AcceptedCmp2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Complain
+		dataType: string
+		lineageTag: a06debce-7e06-48af-8266-1eea52b0440c
+		summarizeBy: none
+		sourceColumn: Complain
+
+		annotation SummarizationSetBy = Automatic
+
+	column Z_CostContact
+		dataType: string
+		lineageTag: 5867ff8c-4f2a-4577-81da-d53eec1ccd32
+		summarizeBy: none
+		sourceColumn: Z_CostContact
+
+		annotation SummarizationSetBy = Automatic
+
+	column Z_Revenue
+		dataType: string
+		lineageTag: aef9394b-109a-4555-b380-fec820b8edb9
+		summarizeBy: none
+		sourceColumn: Z_Revenue
+
+		annotation SummarizationSetBy = Automatic
+
+	column Response
+		dataType: string
+		lineageTag: 77efe5fd-ee93-435c-a8be-8c693f1f7f38
+		summarizeBy: none
+		sourceColumn: Response
+
+		annotation SummarizationSetBy = Automatic
+
+	partition data_raw = m
+		mode: import
+		queryGroup: 'Datos Brutos'
+		source =
+				let
+				    Origen = Csv.Document(Web.Contents("https://raw.githubusercontent.com/ea-analisisdatos/powerbi/main/data/marketing_campaign.csv"),[Delimiter=";", Columns=29, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true])
+				in
+				    #"Encabezados promovidos"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

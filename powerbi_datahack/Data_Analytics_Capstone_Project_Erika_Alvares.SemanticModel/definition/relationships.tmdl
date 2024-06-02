@@ -1,5 +1,5 @@
-relationship 2851cd91-68f5-4de5-aebc-5239c68890e3
+relationship 84b2a15f-963c-4cc0-b8fd-e9c7f9267c20
 	joinOnDateBehavior: datePartOnly
-	fromColumn: marketing_campaign.Fecha_Alta
-	toColumn: LocalDateTable_89eaef9c-50ef-4ad0-8d2d-810ce475a7f8.Date
+	fromColumn: f_campanas.Fecha_Alta
+	toColumn: LocalDateTable_08fc6284-1eb8-4588-92ea-7ea5bf2c8b99.Date
 
