@@ -257,16 +257,73 @@ table marketing_campaign
 
 		annotation SummarizationSetBy = Automatic
 
+	column Edad
+		dataType: string
+		lineageTag: 921f045b-f375-492d-8a56-47cae0b04f75
+		summarizeBy: none
+		sourceColumn: Edad
+
+		annotation SummarizationSetBy = Automatic
+
 	partition marketing_campaign = m
 		mode: import
-		source =
+		source = ```
 				let
 				    Origen = Csv.Document(Web.Contents("https://raw.githubusercontent.com/ea-analisisdatos/powerbi/main/data/marketing_campaign.csv"),[Delimiter=";", Columns=29, Encoding=65001, QuoteStyle=QuoteStyle.None]),
 				    #"Encabezados promovidos" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),
-				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Year_Birth", Int64.Type}, {"Income", Currency.Type}, {"Dt_Customer", type date}, {"Recency", Int64.Type}, {"MntWines", Currency.Type}, {"MntFruits", Currency.Type}, {"MntMeatProducts", Currency.Type}, {"MntFishProducts", Currency.Type}, {"MntSweetProducts", Currency.Type}, {"MntGoldProds", Currency.Type}, {"NumDealsPurchases", Int64.Type}, {"NumWebPurchases", Int64.Type}, {"NumCatalogPurchases", Int64.Type}, {"NumStorePurchases", Int64.Type}, {"NumWebVisitsMonth", Int64.Type}, {"Z_CostContact", Currency.Type}, {"Z_Revenue", Currency.Type}}),
-				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Tipo cambiado",{{"Year_Birth", "Año_Nacimiento"}, {"Education", "Educación"}, {"Marital_Status", "Estado_Civil"}, {"Income", "Ingreso_Familiar"}, {"Dt_Customer", "Fecha_Alta"}, {"Z_Revenue", "Ganancias_Campaña"}, {"Response", "Respuesta_Campaña"}, {"Complain", "Queja"}, {"Kidhome", "Hijos_Pequeños"}, {"Teenhome", "Hijos_Adolescentes"}, {"Recency", "Recencia"}, {"MntWines", "Gasto_Vinos"}, {"MntFruits", "Gasto_Frutas"}, {"MntMeatProducts", "Gasto_Carne"}, {"MntFishProducts", "Gasto_Pescado"}, {"MntSweetProducts", "Gasto_Dulces"}, {"Z_CostContact", "Costo_Contacto"}, {"MntGoldProds", "Gasto_Producto_Premium"}, {"NumDealsPurchases", "Compras_Descuento"}, {"NumWebPurchases", "Compras_Web"}, {"NumCatalogPurchases", "Compras_Catalogo"}, {"NumStorePurchases", "Compras_Tienda"}, {"NumWebVisitsMonth", "Visitas_Web_Mes"}, {"AcceptedCmp3", "Campaña_Aceptada_3"}, {"AcceptedCmp4", "Campaña_Aceptada_4"}, {"AcceptedCmp5", "Campaña_Aceptada_5"}, {"AcceptedCmp1", "Campaña_Aceptada_1"}, {"AcceptedCmp2", "Campaña_Aceptada_2"}})
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Year_Birth", Int64.Type}, 
+				                                                                            {"Income", Currency.Type}, 
+				                                                                            {"Dt_Customer", type date}, 
+				                                                                            {"Recency", Int64.Type}, 
+				                                                                            {"MntWines", Currency.Type}, 
+				                                                                            {"MntFruits", Currency.Type}, 
+				                                                                            {"MntMeatProducts", Currency.Type}, 
+				                                                                            {"MntFishProducts", Currency.Type}, 
+				                                                                            {"MntSweetProducts", Currency.Type}, 
+				                                                                            {"MntGoldProds", Currency.Type}, 
+				                                                                            {"NumDealsPurchases", Int64.Type}, 
+				                                                                            {"NumWebPurchases", Int64.Type}, 
+				                                                                            {"NumCatalogPurchases", Int64.Type}, 
+				                                                                            {"NumStorePurchases", Int64.Type}, 
+				                                                                            {"NumWebVisitsMonth", Int64.Type}, 
+				                                                                            {"Z_CostContact", Currency.Type}, 
+				                                                                            {"Z_Revenue", Currency.Type}}),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Tipo cambiado",{{"Year_Birth", "Año_Nacimiento"}, 
+				                                                                            {"Education", "Educación"}, 
+				                                                                            {"Marital_Status", "Estado_Civil"}, 
+				                                                                            {"Income", "Ingreso_Familiar"}, 
+				                                                                            {"Dt_Customer", "Fecha_Alta"}, 
+				                                                                            {"Z_Revenue", "Ganancias_Campaña"}, 
+				                                                                            {"Response", "Respuesta_Campaña"}, 
+				                                                                            {"Complain", "Queja"}, 
+				                                                                            {"Kidhome", "Hijos_Pequeños"}, 
+				                                                                            {"Teenhome", "Hijos_Adolescentes"}, 
+				                                                                            {"Recency", "Recencia"}, 
+				                                                                            {"MntWines", "Gasto_Vinos"}, 
+				                                                                            {"MntFruits", "Gasto_Frutas"}, 
+				                                                                            {"MntMeatProducts", "Gasto_Carne"}, 
+				                                                                            {"MntFishProducts", "Gasto_Pescado"}, 
+				                                                                            {"MntSweetProducts", "Gasto_Dulces"}, 
+				                                                                            {"Z_CostContact", "Costo_Contacto"}, 
+				                                                                            {"MntGoldProds", "Gasto_Producto_Premium"}, 
+				                                                                            {"NumDealsPurchases", "Compras_Descuento"}, 
+				                                                                            {"NumWebPurchases", "Compras_Web"}, 
+				                                                                            {"NumCatalogPurchases", "Compras_Catalogo"}, 
+				                                                                            {"NumStorePurchases", "Compras_Tienda"}, 
+				                                                                            {"NumWebVisitsMonth", "Visitas_Web_Mes"}, 
+				                                                                            {"AcceptedCmp3", "Campaña_Aceptada_3"}, 
+				                                                                            {"AcceptedCmp4", "Campaña_Aceptada_4"}, 
+				                                                                            {"AcceptedCmp5", "Campaña_Aceptada_5"}, 
+				                                                                            {"AcceptedCmp1", "Campaña_Aceptada_1"}, 
+				                                                                            {"AcceptedCmp2", "Campaña_Aceptada_2"}}),
+				
+				//
+				    #"Añadida columna Age" = Table.AddColumn(#"Columnas con nombre cambiado", "Edad", each Date.Year(DateTimeZone.UtcNow()) - [Año_Nacimiento]),
+				    #"Columnas reordenadas" = Table.ReorderColumns(#"Añadida columna Age",{"ID", "Año_Nacimiento", "Edad", "Educación", "Estado_Civil", "Ingreso_Familiar", "Hijos_Pequeños", "Hijos_Adolescentes", "Fecha_Alta", "Recencia", "Gasto_Vinos", "Gasto_Frutas", "Gasto_Carne", "Gasto_Pescado", "Gasto_Dulces", "Gasto_Producto_Premium", "Compras_Descuento", "Compras_Web", "Compras_Catalogo", "Compras_Tienda", "Visitas_Web_Mes", "Campaña_Aceptada_3", "Campaña_Aceptada_4", "Campaña_Aceptada_5", "Campaña_Aceptada_1", "Campaña_Aceptada_2", "Queja", "Costo_Contacto", "Ganancias_Campaña", "Respuesta_Campaña"})
+				
 				in
-				    #"Columnas con nombre cambiado"
+				    #"Columnas reordenadas"
+				```
 
 	annotation PBI_NavigationStepName = Navegación
 
