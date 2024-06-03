@@ -3,3 +3,8 @@ relationship 84b2a15f-963c-4cc0-b8fd-e9c7f9267c20
 	fromColumn: f_campanas.Fecha_Alta
 	toColumn: LocalDateTable_08fc6284-1eb8-4588-92ea-7ea5bf2c8b99.Date
 
+relationship 74fda6dd-fcc6-4245-8327-c4b9dd298235
+	joinOnDateBehavior: datePartOnly
+	fromColumn: limpieza_datos.Dt_Customer
+	toColumn: LocalDateTable_cac18c45-4900-4de1-84fe-269669ca4f1e.Date
+

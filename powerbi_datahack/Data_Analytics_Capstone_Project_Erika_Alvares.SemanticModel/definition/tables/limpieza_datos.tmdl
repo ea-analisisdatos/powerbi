@@ -1,0 +1,338 @@
+table limpieza_datos
+	lineageTag: 4e5735f7-0437-4f92-8e6f-25f8e77c2334
+
+	column ID
+		dataType: string
+		lineageTag: 03dc514a-1e34-4d1d-84a5-8e64f19f908f
+		summarizeBy: none
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year_Birth
+		dataType: int64
+		formatString: 0
+		lineageTag: 67a48cff-2a3a-4c69-ba62-a4c2ff47bdc9
+		summarizeBy: sum
+		sourceColumn: Year_Birth
+
+		annotation SummarizationSetBy = Automatic
+
+	column Education
+		dataType: string
+		lineageTag: 9e7247fc-8154-49f9-93f3-787bd43d3e1e
+		summarizeBy: none
+		sourceColumn: Education
+
+		annotation SummarizationSetBy = Automatic
+
+	column Marital_Status
+		dataType: string
+		lineageTag: 862f45f6-02d6-4f3e-88b1-d9f7c86d72f1
+		summarizeBy: none
+		sourceColumn: Marital_Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column Income
+		dataType: string
+		lineageTag: 0397eca4-9cd2-445b-bb71-95d557c4cd82
+		summarizeBy: none
+		sourceColumn: Income
+
+		annotation SummarizationSetBy = Automatic
+
+	column Kidhome
+		dataType: string
+		lineageTag: bc1bbd1e-ca80-45f7-99df-d03559849265
+		summarizeBy: none
+		sourceColumn: Kidhome
+
+		annotation SummarizationSetBy = Automatic
+
+	column Teenhome
+		dataType: string
+		lineageTag: ae62b399-a7e6-4e6a-b9f5-3f4f1f4fc03d
+		summarizeBy: none
+		sourceColumn: Teenhome
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dt_Customer
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 9c0cdd10-3656-43e1-bf54-f64add689a70
+		summarizeBy: none
+		sourceColumn: Dt_Customer
+
+		variation Variación
+			isDefault
+			relationship: 74fda6dd-fcc6-4245-8327-c4b9dd298235
+			defaultHierarchy: LocalDateTable_cac18c45-4900-4de1-84fe-269669ca4f1e.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Recency
+		dataType: int64
+		formatString: 0
+		lineageTag: ca75bfd2-5236-48f0-bb26-f36f3c91b2b0
+		summarizeBy: sum
+		sourceColumn: Recency
+
+		annotation SummarizationSetBy = Automatic
+
+	column MntWines
+		dataType: decimal
+		formatString: #,0.###############\ "€";-#,0.###############\ "€";#,0.###############\ "€"
+		lineageTag: 2d6f39eb-e516-4588-aeba-77bd01127206
+		summarizeBy: sum
+		sourceColumn: MntWines
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"es-ES"}
+
+	column MntFruits
+		dataType: decimal
+		formatString: #,0.###############\ "€";-#,0.###############\ "€";#,0.###############\ "€"
+		lineageTag: 4853e93f-9697-4c93-9021-62bfb2637d64
+		summarizeBy: sum
+		sourceColumn: MntFruits
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"es-ES"}
+
+	column MntMeatProducts
+		dataType: decimal
+		formatString: #,0.###############\ "€";-#,0.###############\ "€";#,0.###############\ "€"
+		lineageTag: a418d6fc-7f8c-4571-952e-aba1f01181e8
+		summarizeBy: sum
+		sourceColumn: MntMeatProducts
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"es-ES"}
+
+	column MntFishProducts
+		dataType: decimal
+		formatString: #,0.###############\ "€";-#,0.###############\ "€";#,0.###############\ "€"
+		lineageTag: fa08708c-a634-4149-a96b-06ace783f33d
+		summarizeBy: sum
+		sourceColumn: MntFishProducts
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"es-ES"}
+
+	column MntSweetProducts
+		dataType: decimal
+		formatString: #,0.###############\ "€";-#,0.###############\ "€";#,0.###############\ "€"
+		lineageTag: ebac8cf6-75df-4bea-b556-e9be63027884
+		summarizeBy: sum
+		sourceColumn: MntSweetProducts
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"es-ES"}
+
+	column MntGoldProds
+		dataType: decimal
+		formatString: #,0.###############\ "€";-#,0.###############\ "€";#,0.###############\ "€"
+		lineageTag: c151aff6-1bc6-46ed-8723-3664c0916653
+		summarizeBy: sum
+		sourceColumn: MntGoldProds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"es-ES"}
+
+	column NumDealsPurchases
+		dataType: int64
+		formatString: 0
+		lineageTag: fc73b4f9-969b-4887-847c-2a1493d7e7db
+		summarizeBy: sum
+		sourceColumn: NumDealsPurchases
+
+		annotation SummarizationSetBy = Automatic
+
+	column NumWebPurchases
+		dataType: int64
+		formatString: 0
+		lineageTag: f7615eae-d211-4046-9e52-6915f5e2714e
+		summarizeBy: sum
+		sourceColumn: NumWebPurchases
+
+		annotation SummarizationSetBy = Automatic
+
+	column NumCatalogPurchases
+		dataType: int64
+		formatString: 0
+		lineageTag: 61653cda-3453-4a6a-9009-62fc5257d41b
+		summarizeBy: sum
+		sourceColumn: NumCatalogPurchases
+
+		annotation SummarizationSetBy = Automatic
+
+	column NumStorePurchases
+		dataType: int64
+		formatString: 0
+		lineageTag: 47483c1f-4354-47c4-a0d5-adb07000b095
+		summarizeBy: sum
+		sourceColumn: NumStorePurchases
+
+		annotation SummarizationSetBy = Automatic
+
+	column NumWebVisitsMonth
+		dataType: int64
+		formatString: 0
+		lineageTag: e0860deb-d91b-46db-b606-654c3e748072
+		summarizeBy: sum
+		sourceColumn: NumWebVisitsMonth
+
+		annotation SummarizationSetBy = Automatic
+
+	column AcceptedCmp3
+		dataType: string
+		lineageTag: 5443e4dd-2d95-484f-af42-a202bc0cb85d
+		summarizeBy: none
+		sourceColumn: AcceptedCmp3
+
+		annotation SummarizationSetBy = Automatic
+
+	column AcceptedCmp4
+		dataType: string
+		lineageTag: 3dd3d640-12b5-4a4c-aa75-1158d3119d99
+		summarizeBy: none
+		sourceColumn: AcceptedCmp4
+
+		annotation SummarizationSetBy = Automatic
+
+	column AcceptedCmp5
+		dataType: string
+		lineageTag: 8bf0eeaf-382b-4746-be7e-0448d1807070
+		summarizeBy: none
+		sourceColumn: AcceptedCmp5
+
+		annotation SummarizationSetBy = Automatic
+
+	column AcceptedCmp1
+		dataType: string
+		lineageTag: bd146623-92ec-4153-b083-926f1fe99842
+		summarizeBy: none
+		sourceColumn: AcceptedCmp1
+
+		annotation SummarizationSetBy = Automatic
+
+	column AcceptedCmp2
+		dataType: string
+		lineageTag: 7fa54d2b-efe6-40c2-9c9b-eb5b92da7702
+		summarizeBy: none
+		sourceColumn: AcceptedCmp2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Complain
+		dataType: string
+		lineageTag: 2ed170b2-8f34-46d5-9ba1-5bc1350342a7
+		summarizeBy: none
+		sourceColumn: Complain
+
+		annotation SummarizationSetBy = Automatic
+
+	column Z_CostContact
+		dataType: decimal
+		formatString: #,0.###############\ "€";-#,0.###############\ "€";#,0.###############\ "€"
+		lineageTag: b5463f1d-bf60-4ed1-9ec3-78f8d0f8eb24
+		summarizeBy: sum
+		sourceColumn: Z_CostContact
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"es-ES"}
+
+	column Z_Revenue
+		dataType: decimal
+		formatString: #,0.###############\ "€";-#,0.###############\ "€";#,0.###############\ "€"
+		lineageTag: d0134633-a447-4ca4-9887-49f581a45fd0
+		summarizeBy: sum
+		sourceColumn: Z_Revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"es-ES"}
+
+	column Response
+		dataType: string
+		lineageTag: 922a719f-1df8-4718-b5f4-bc048a42c69a
+		summarizeBy: none
+		sourceColumn: Response
+
+		annotation SummarizationSetBy = Automatic
+
+	partition limpieza_datos = m
+		mode: import
+		queryGroup: PREPROCESAMIENTO
+		source = ```
+				let
+				    Origen = data_raw,
+				
+				    // Cambiar tipos de datos
+				    #"Tipo cambiado" = Table.TransformColumnTypes(Origen,{{"Year_Birth", Int64.Type}, 
+				                                                            {"Income", Currency.Type}, 
+				                                                            {"Dt_Customer", type date}, 
+				                                                            {"Recency", Int64.Type}, 
+				                                                            {"MntWines", Currency.Type}, 
+				                                                            {"MntFruits", Currency.Type}, 
+				                                                            {"MntMeatProducts", Currency.Type}, 
+				                                                            {"MntFishProducts", Currency.Type}, 
+				                                                            {"MntSweetProducts", Currency.Type}, 
+				                                                            {"MntGoldProds", Currency.Type}, 
+				                                                            {"NumDealsPurchases", Int64.Type}, 
+				                                                            {"NumWebPurchases", Int64.Type}, 
+				                                                            {"NumCatalogPurchases", Int64.Type}, 
+				                                                            {"NumStorePurchases", Int64.Type}, 
+				                                                            {"NumWebVisitsMonth", Int64.Type}, 
+				                                                            {"Z_CostContact", Currency.Type}, 
+				                                                            {"Z_Revenue", Currency.Type}}),
+				
+				    // Eliminar filas con errores - Filtra las personas con edad mayor que 100 años
+				     #"Eliminadas personas mayores 100 años" = Table.SelectRows(#"Tipo cambiado", each [Year_Birth] > 1900),
+				    
+				    //Valor de Ingreso Extremo (Outlier) igual a 666666 remplazado por null - Sera atribuido el valor de la mediana de ingresos
+				    #"Reemplazado Valor Outlier" = Table.ReplaceValue(#"Eliminadas personas mayores 100 años",666666,null,Replacer.ReplaceValue,{"Income"}),
+				
+				    // IMPUTAR VALORES NULOS CON LA MEDIANA EN LA COLUMNA INGRESO (INCOME)
+				
+				    // Agrupar por Educación, Estado_Civil y calcular la mediana de Ingreso_Familiar
+				    AgruparMediana = Table.Group(#"Reemplazado Valor Outlier", {"Education", "Marital_Status"}, {
+				        {"Mediana_Ingreso_Familiar", each List.Median(List.RemoveNulls([Income])), Currency.Type}
+				    }),
+				
+				    // Fusionar la tabla original con la tabla agrupada
+				    Fusionar = Table.NestedJoin(#"Reemplazado Valor Outlier", {"Education", "Marital_Status"}, AgruparMediana, {"Education", "Marital_Status"}, "Tabla_Agrupada", JoinKind.LeftOuter),
+				
+				    // Expandir la tabla agrupada para incluir la columna Mediana_Ingreso_Familiar
+				    Expandir = Table.ExpandTableColumn(Fusionar, "Tabla_Agrupada", {"Mediana_Ingreso_Familiar"}),
+				
+				    // Añadir columna Mediana_Ingreso_Familiar corregida
+				    #"Añadir columna Mediana_Ingreso_Familiar_Corregida" = Table.AddColumn(Expandir, "Mediana_Ingreso_Familiar_Corregida", each if [Income] = null then [Mediana_Ingreso_Familiar] else [Income]),
+				
+				    // Eliminar columna intermedia Mediana_Ingreso_Familiar
+				    #"Eliminar columna intermedia 1" = Table.RemoveColumns(#"Añadir columna Mediana_Ingreso_Familiar_Corregida", {"Mediana_Ingreso_Familiar"}),
+				
+				    // Renombrar columna Mediana_Ingreso_Familiar_Corregida a Mediana_Ingreso_Familiar
+				    #"Renombrar columna" = Table.RenameColumns(#"Eliminar columna intermedia 1", {{"Mediana_Ingreso_Familiar_Corregida", "Mediana_Ingreso_Familiar"}}),
+				    #"Columna  Income con valores nulos quitada" = Table.RemoveColumns(#"Renombrar columna",{"Income"}),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Columna  Income con valores nulos quitada",{{"Mediana_Ingreso_Familiar", "Income"}}),
+				    #"Columnas reordenadas" = Table.ReorderColumns(#"Columnas con nombre cambiado",{"ID", "Year_Birth", "Education", "Marital_Status", "Income", "Kidhome", "Teenhome", "Dt_Customer", "Recency", "MntWines", "MntFruits", "MntMeatProducts", "MntFishProducts", "MntSweetProducts", "MntGoldProds", "NumDealsPurchases", "NumWebPurchases", "NumCatalogPurchases", "NumStorePurchases", "NumWebVisitsMonth", "AcceptedCmp3", "AcceptedCmp4", "AcceptedCmp5", "AcceptedCmp1", "AcceptedCmp2", "Complain", "Z_CostContact", "Z_Revenue", "Response"})
+				in
+				    #"Columnas reordenadas"
+				```
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

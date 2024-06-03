@@ -21,7 +21,7 @@ queryGroup DIMENSIONES
 
 	annotation PBI_QueryGroupOrder = 3
 
-/// - Limpieza 
+/// - Limpieza
 /// - Tratamiento de Valores Nulos
 queryGroup PREPROCESAMIENTO
 
@@ -31,7 +31,7 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBIDesktopVersion = 2.129.1229.0 (24.05)
 
-annotation PBI_QueryOrder = ["data_raw","f_campanas"]
+annotation PBI_QueryOrder = ["data_raw","f_campanas","limpieza_datos"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -39,6 +39,8 @@ ref table DateTableTemplate_b024febb-f18a-456a-a2b8-94d2606f2c1e
 ref table data_raw
 ref table f_campanas
 ref table LocalDateTable_08fc6284-1eb8-4588-92ea-7ea5bf2c8b99
+ref table limpieza_datos
+ref table LocalDateTable_cac18c45-4900-4de1-84fe-269669ca4f1e
 
 ref cultureInfo es-ES
 
