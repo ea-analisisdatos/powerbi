@@ -274,7 +274,7 @@ table limpieza_datos
 
 	partition limpieza_datos = m
 		mode: import
-		queryGroup: PREPROCESAMIENTO
+		queryGroup: Preprocesamiento
 		source = ```
 				let
 				    Origen = data_raw,

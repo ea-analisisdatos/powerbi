@@ -17,13 +17,11 @@ queryGroup Hechos
 	annotation PBI_QueryGroupOrder = 2
 
 /// Almacena tablas de dimensiones (DIMENSIONS).
-queryGroup DIMENSIONES
+queryGroup Dimensiones
 
 	annotation PBI_QueryGroupOrder = 3
 
-/// - Limpieza
-/// - Tratamiento de Valores Nulos
-queryGroup PREPROCESAMIENTO
+queryGroup Preprocesamiento
 
 	annotation PBI_QueryGroupOrder = 1
 
