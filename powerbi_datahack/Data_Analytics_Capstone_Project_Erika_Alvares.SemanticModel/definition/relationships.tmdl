@@ -8,3 +8,8 @@ relationship 74fda6dd-fcc6-4245-8327-c4b9dd298235
 	fromColumn: limpieza_datos.Dt_Customer
 	toColumn: LocalDateTable_cac18c45-4900-4de1-84fe-269669ca4f1e.Date
 
+relationship 300c12f4-a5f2-46b8-8559-b014a4847204
+	joinOnDateBehavior: datePartOnly
+	fromColumn: transformacion_datos.Fecha_Alta
+	toColumn: LocalDateTable_c028fb12-46cf-4af9-88d8-311e3a2b044e.Date
+

@@ -31,7 +31,7 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBIDesktopVersion = 2.129.1229.0 (24.05)
 
-annotation PBI_QueryOrder = ["data_raw","f_campanas","limpieza_datos"]
+annotation PBI_QueryOrder = ["data_raw","f_campanas","limpieza_datos","transformacion_datos"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -41,6 +41,8 @@ ref table f_campanas
 ref table LocalDateTable_08fc6284-1eb8-4588-92ea-7ea5bf2c8b99
 ref table limpieza_datos
 ref table LocalDateTable_cac18c45-4900-4de1-84fe-269669ca4f1e
+ref table transformacion_datos
+ref table LocalDateTable_c028fb12-46cf-4af9-88d8-311e3a2b044e
 
 ref cultureInfo es-ES
 

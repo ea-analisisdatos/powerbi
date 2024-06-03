@@ -1,0 +1,373 @@
+table transformacion_datos
+	lineageTag: d86bf4cf-3338-48d7-9a7f-7b554ca67ca0
+
+	column ID
+		dataType: string
+		lineageTag: d7227bdf-2b63-47d9-a217-170ec215c470
+		summarizeBy: none
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Año_Nacimiento
+		dataType: int64
+		formatString: 0
+		lineageTag: cb920df3-cf1e-40bd-bcb2-713dd0728f0e
+		summarizeBy: sum
+		sourceColumn: Año_Nacimiento
+
+		annotation SummarizationSetBy = Automatic
+
+	column Educación
+		dataType: string
+		lineageTag: ea237542-1a89-4d4c-98ea-b3a4d06dde2f
+		summarizeBy: none
+		sourceColumn: Educación
+
+		annotation SummarizationSetBy = Automatic
+
+	column Estado_Civil
+		dataType: string
+		lineageTag: fd496d59-d85d-4593-9cb9-f3672e11bf00
+		summarizeBy: none
+		sourceColumn: Estado_Civil
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ingreso_Familiar
+		dataType: decimal
+		formatString: #,0.###############\ "€";-#,0.###############\ "€";#,0.###############\ "€"
+		lineageTag: 0a087684-826d-4b6c-8788-3d9628afff8f
+		summarizeBy: sum
+		sourceColumn: Ingreso_Familiar
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"es-ES"}
+
+	column Hijos_Pequeños
+		dataType: int64
+		formatString: 0
+		lineageTag: 99995a80-d1a3-4fb9-aa9a-17b63ab5d25f
+		summarizeBy: sum
+		sourceColumn: Hijos_Pequeños
+
+		annotation SummarizationSetBy = Automatic
+
+	column Hijos_Adolescentes
+		dataType: int64
+		formatString: 0
+		lineageTag: 010151df-b111-42aa-a60a-0074111288a8
+		summarizeBy: sum
+		sourceColumn: Hijos_Adolescentes
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fecha_Alta
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: e8d9b268-946c-4b37-8bec-56d9e2cda40a
+		summarizeBy: none
+		sourceColumn: Fecha_Alta
+
+		variation Variación
+			isDefault
+			relationship: 300c12f4-a5f2-46b8-8559-b014a4847204
+			defaultHierarchy: LocalDateTable_c028fb12-46cf-4af9-88d8-311e3a2b044e.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Recencia
+		dataType: int64
+		formatString: 0
+		lineageTag: 4e098a66-381f-4a24-809a-2df83f63bf08
+		summarizeBy: sum
+		sourceColumn: Recencia
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gasto_Vinos
+		dataType: decimal
+		formatString: #,0.###############\ "€";-#,0.###############\ "€";#,0.###############\ "€"
+		lineageTag: 457b5811-9a2a-44aa-8f44-095eb31e5bde
+		summarizeBy: sum
+		sourceColumn: Gasto_Vinos
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"es-ES"}
+
+	column Gasto_Frutas
+		dataType: decimal
+		formatString: #,0.###############\ "€";-#,0.###############\ "€";#,0.###############\ "€"
+		lineageTag: f5f2d390-0076-44a4-b777-a8f5bbe5bb17
+		summarizeBy: sum
+		sourceColumn: Gasto_Frutas
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"es-ES"}
+
+	column Gasto_Carne
+		dataType: decimal
+		formatString: #,0.###############\ "€";-#,0.###############\ "€";#,0.###############\ "€"
+		lineageTag: 113803a2-d6b9-4e4b-b608-cd916254df83
+		summarizeBy: sum
+		sourceColumn: Gasto_Carne
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"es-ES"}
+
+	column Gasto_Pescado
+		dataType: decimal
+		formatString: #,0.###############\ "€";-#,0.###############\ "€";#,0.###############\ "€"
+		lineageTag: f74c94b2-f637-4409-8aeb-44c2097bb303
+		summarizeBy: sum
+		sourceColumn: Gasto_Pescado
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"es-ES"}
+
+	column Gasto_Dulces
+		dataType: decimal
+		formatString: #,0.###############\ "€";-#,0.###############\ "€";#,0.###############\ "€"
+		lineageTag: b2271647-5447-4c97-a6e1-f75598118134
+		summarizeBy: sum
+		sourceColumn: Gasto_Dulces
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"es-ES"}
+
+	column Gasto_Producto_Premium
+		dataType: decimal
+		formatString: #,0.###############\ "€";-#,0.###############\ "€";#,0.###############\ "€"
+		lineageTag: 5888977d-ba3a-4c2b-a5a8-81b7f16ec331
+		summarizeBy: sum
+		sourceColumn: Gasto_Producto_Premium
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"es-ES"}
+
+	column Compras_Descuento
+		dataType: int64
+		formatString: 0
+		lineageTag: 827f0c69-f4ca-45f4-9aa0-ab58ef1338f0
+		summarizeBy: sum
+		sourceColumn: Compras_Descuento
+
+		annotation SummarizationSetBy = Automatic
+
+	column Compras_Web
+		dataType: int64
+		formatString: 0
+		lineageTag: 8e9100fd-d877-4b58-bdc8-c824e8fa939a
+		summarizeBy: sum
+		sourceColumn: Compras_Web
+
+		annotation SummarizationSetBy = Automatic
+
+	column Compras_Catalogo
+		dataType: int64
+		formatString: 0
+		lineageTag: 4c03dea2-066a-41d0-88a2-05e6cec2e3ce
+		summarizeBy: sum
+		sourceColumn: Compras_Catalogo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Compras_Tienda
+		dataType: int64
+		formatString: 0
+		lineageTag: 25c7f7e6-1ac7-4221-abad-ec5cb59c2b6b
+		summarizeBy: sum
+		sourceColumn: Compras_Tienda
+
+		annotation SummarizationSetBy = Automatic
+
+	column Visitas_Web_Mes
+		dataType: int64
+		formatString: 0
+		lineageTag: 89e3ba92-d2a4-4634-b9ea-75de1fb38b96
+		summarizeBy: sum
+		sourceColumn: Visitas_Web_Mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column Campaña_Aceptada_3
+		dataType: string
+		lineageTag: 71030445-8fec-434c-a827-c16883f33821
+		summarizeBy: none
+		sourceColumn: Campaña_Aceptada_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Campaña_Aceptada_4
+		dataType: string
+		lineageTag: 091ce77e-ff48-4e5b-aca8-9d0d333217ee
+		summarizeBy: none
+		sourceColumn: Campaña_Aceptada_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column Campaña_Aceptada_5
+		dataType: string
+		lineageTag: 974b61a9-6b08-4a01-b95a-d0271c7198c8
+		summarizeBy: none
+		sourceColumn: Campaña_Aceptada_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column Campaña_Aceptada_1
+		dataType: string
+		lineageTag: 855f3296-d804-4f83-990c-08b986f670e3
+		summarizeBy: none
+		sourceColumn: Campaña_Aceptada_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Campaña_Aceptada_2
+		dataType: string
+		lineageTag: eb2ce0be-02cb-447a-a102-affcf19813f3
+		summarizeBy: none
+		sourceColumn: Campaña_Aceptada_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Queja
+		dataType: string
+		lineageTag: f7551b56-5c17-49f9-8d86-0055a7637138
+		summarizeBy: none
+		sourceColumn: Queja
+
+		annotation SummarizationSetBy = Automatic
+
+	column Costo_Contacto
+		dataType: decimal
+		formatString: #,0.###############\ "€";-#,0.###############\ "€";#,0.###############\ "€"
+		lineageTag: bc5a8df3-44b3-4fca-ab42-563c6e1fd7c0
+		summarizeBy: sum
+		sourceColumn: Costo_Contacto
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"es-ES"}
+
+	column Ganancias_Campaña
+		dataType: decimal
+		formatString: #,0.###############\ "€";-#,0.###############\ "€";#,0.###############\ "€"
+		lineageTag: 61b54c60-2259-41f7-8bbf-253870e6c92c
+		summarizeBy: sum
+		sourceColumn: Ganancias_Campaña
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"es-ES"}
+
+	column Respuesta_Campaña
+		dataType: string
+		lineageTag: a2458965-2825-4cb6-b732-d8bc13e5229e
+		summarizeBy: none
+		sourceColumn: Respuesta_Campaña
+
+		annotation SummarizationSetBy = Automatic
+
+	column Edad
+		dataType: string
+		lineageTag: a87407c8-5634-47d4-8b10-47045430d018
+		summarizeBy: none
+		sourceColumn: Edad
+
+		annotation SummarizationSetBy = Automatic
+
+	partition transformacion_datos = m
+		mode: import
+		queryGroup: PREPROCESAMIENTO
+		source = ```
+				let
+				    Origen = limpieza_datos,
+				    #"Tipo cambiado" = Table.TransformColumnTypes(Origen,{{"Income", Currency.Type}, {"Kidhome", Int64.Type}, {"Teenhome", Int64.Type}}),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Tipo cambiado",{{"Year_Birth", "Año_Nacimiento"}, 
+				                                                                            {"Education", "Educación"}, 
+				                                                                            {"Marital_Status", "Estado_Civil"}, 
+				                                                                            {"Income", "Ingreso_Familiar"}, 
+				                                                                            {"Dt_Customer", "Fecha_Alta"}, 
+				                                                                            {"Z_Revenue", "Ganancias_Campaña"}, 
+				                                                                            {"Response", "Respuesta_Campaña"}, 
+				                                                                            {"Complain", "Queja"}, 
+				                                                                            {"Kidhome", "Hijos_Pequeños"}, 
+				                                                                            {"Teenhome", "Hijos_Adolescentes"}, 
+				                                                                            {"Recency", "Recencia"}, 
+				                                                                            {"MntWines", "Gasto_Vinos"}, 
+				                                                                            {"MntFruits", "Gasto_Frutas"}, 
+				                                                                            {"MntMeatProducts", "Gasto_Carne"}, 
+				                                                                            {"MntFishProducts", "Gasto_Pescado"}, 
+				                                                                            {"MntSweetProducts", "Gasto_Dulces"}, 
+				                                                                            {"Z_CostContact", "Costo_Contacto"}, 
+				                                                                            {"MntGoldProds", "Gasto_Producto_Premium"}, 
+				                                                                            {"NumDealsPurchases", "Compras_Descuento"}, 
+				                                                                            {"NumWebPurchases", "Compras_Web"}, 
+				                                                                            {"NumCatalogPurchases", "Compras_Catalogo"}, 
+				                                                                            {"NumStorePurchases", "Compras_Tienda"}, 
+				                                                                            {"NumWebVisitsMonth", "Visitas_Web_Mes"}, 
+				                                                                            {"AcceptedCmp3", "Campaña_Aceptada_3"}, 
+				                                                                            {"AcceptedCmp4", "Campaña_Aceptada_4"}, 
+				                                                                            {"AcceptedCmp5", "Campaña_Aceptada_5"}, 
+				                                                                            {"AcceptedCmp1", "Campaña_Aceptada_1"}, 
+				                                                                            {"AcceptedCmp2", "Campaña_Aceptada_2"}}),
+				
+				    // Agrega una columna para Edad 
+				    #"Añadida columna Edad" = Table.AddColumn(#"Columnas con nombre cambiado", "Edad", each Date.Year(DateTimeZone.UtcNow()) - [Año_Nacimiento]),
+				
+				    // Añadir columna Origen_Compra
+				    #"Añadir columna Origen_Compra" = Table.AddColumn(#"Eliminados Mayores de 100 años", "Origen_Compra", each if [Compras_Descuento] = 0 and
+				                                                                                                                [Compras_Web] = 0 and 
+				                                                                                                                [Compras_Catalogo] = 0 and 
+				                                                                                                                [Compras_Tienda] = 0 and 
+				                                                                                                                [Visitas_Web_Mes] = 0 
+				                                                                                                                then "Origen de Compra Desconocido" else "Origen de Compra Conocido"),
+				
+				    #"Columna Edad reordenada" = Table.ReorderColumns(#"Añadida columna Edad",{"ID", 
+				                                                                            "Año_Nacimiento", 
+				                                                                            "Edad", 
+				                                                                            "Educación", 
+				                                                                            "Estado_Civil", 
+				                                                                            "Ingreso_Familiar", 
+				                                                                            "Hijos_Pequeños", 
+				                                                                            "Hijos_Adolescentes", 
+				                                                                            "Fecha_Alta", 
+				                                                                            "Recencia", 
+				                                                                            "Gasto_Vinos", 
+				                                                                            "Gasto_Frutas", 
+				                                                                            "Gasto_Carne", 
+				                                                                            "Gasto_Pescado", 
+				                                                                            "Gasto_Dulces", 
+				                                                                            "Gasto_Producto_Premium", 
+				                                                                            "Compras_Descuento", 
+				                                                                            "Compras_Web", 
+				                                                                            "Compras_Catalogo", 
+				                                                                            "Compras_Tienda", 
+				                                                                            "Visitas_Web_Mes", 
+				                                                                            "Campaña_Aceptada_3", 
+				                                                                            "Campaña_Aceptada_4", 
+				                                                                            "Campaña_Aceptada_5", 
+				                                                                            "Campaña_Aceptada_1", 
+				                                                                            "Campaña_Aceptada_2", 
+				                                                                            "Queja", 
+				                                                                            "Costo_Contacto", 
+				                                                                            "Ganancias_Campaña", 
+				                                                                            "Respuesta_Campaña"})
+				
+				in
+				    #"Columna Edad reordenada"
+				```
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+
