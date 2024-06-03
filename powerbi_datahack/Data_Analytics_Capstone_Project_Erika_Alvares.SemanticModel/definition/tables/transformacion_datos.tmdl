@@ -332,13 +332,13 @@ table transformacion_datos
 				    // Agregar una columna para Edad 
 				    #"Añadida columna Edad" = Table.AddColumn(#"Columnas con nombre cambiado", "Edad", each Date.Year(DateTimeZone.UtcNow()) - [Año_Nacimiento]),
 				
-				    // Añadir columna Origen_Compra
+				    // Añadir columna Origen_Compra: [0] Origen de Compra Desconocido [1] Origen de Compra Conocido
 				    #"Añadida columna Origen_Compra" = Table.AddColumn(#"Añadida columna Edad", "Origen_Compra", each if [Compras_Descuento] = 0 and
 				                                                                                                            [Compras_Web] = 0 and 
 				                                                                                                            [Compras_Catalogo] = 0 and 
 				                                                                                                            [Compras_Tienda] = 0 and 
 				                                                                                                            [Visitas_Web_Mes] = 0 
-				                                                                                                            then "Origen de Compra Desconocido" else "Origen de Compra Conocido"),
+				                                                                                                            then 0 else 1),
 				
 				    #"Columna Edad reordenada" = Table.ReorderColumns(#"Añadida columna Origen_Compra",{"ID", 
 				                                                                                        "Año_Nacimiento", 
